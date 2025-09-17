@@ -1,0 +1,66 @@
+/* ---- Estilos Generales ---- */
+body {
+    /* Fondo con un gradiente de morados para un efecto más suave y bonito */
+    background: linear-gradient(135deg, #4c2a85, #8a5fb5);
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que el gradiente ocupe toda la altura de la pantalla */
+    
+    /* Usamos Flexbox para centrar la tarjeta vertical y horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Definimos las fuentes para toda la página */
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Un color de texto oscuro pero no negro puro */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ---- Estilo de la Tarjeta Principal ---- */
+.card {
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-radius: 20px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    text-align: center; /* Centramos todo el contenido dentro de la tarjeta */
+    padding: 40px;
+    max-width: 500px; /* Ancho máximo para que no se estire demasiado en pantallas grandes */
+    width: 100%;
+    transform: scale(0.95);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Animación sutil al cargar la página */
+body:not(:active) .card {
+    transform: scale(1);
+}
+
+/* ---- Estilo de la Imagen de Snoopy ---- */
+.snoopy-image {
+    max-width: 200px; /* Tamaño máximo de la imagen de Snoopy */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 25px; /* Espacio entre la imagen y el texto */
+}
+
+/* ---- Estilos del Texto ---- */
+.text-container h1 {
+    font-family: 'Pacifico', cursive; /* Fuente cursiva y elegante para el saludo */
+    color: #4c2a85; /* Color morado oscuro para el título */
+    font-size: 2.5em; /* Tamaño de letra grande */
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.1em; /* Tamaño de letra para los párrafos */
+    line-height: 1.6; /* Espacio entre líneas para que sea fácil de leer */
+    color: #555; /* Un gris oscuro para el texto */
+    margin-bottom: 15px;
+}
+
+.final-phrase {
+    font-weight: bold; /* Letra en negrita */
+    font-style: italic; /* Letra en cursiva */
+    color: #8a5fb5; /* Un tono de morado más claro para la frase final */
+    margin-top: 30px; /* Más espacio arriba para destacar la frase */
+}
